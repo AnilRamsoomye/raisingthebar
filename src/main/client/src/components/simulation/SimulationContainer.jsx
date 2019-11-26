@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import NavigationBar from "../navbar/NavigationBar";
-// import { Container, Row, Col } from "react-bootstrap";
 import IngredientsTable from "./IngredientsTable";
 import CenterFold from "./CenterFold";
 import RightPanel from "./RightPanel";
@@ -40,11 +39,11 @@ export default class SimulationContainer extends Component {
             ingredients.splice(i+1,1);
             volumes.splice(i+1,1);
         }
-        
+
     }
     console.log(ingredients);
     console.log(volumes);
-    
+
     var data = new FormData();
     data.append('name', "test");
     data.append('glass', 'Shot Glass');

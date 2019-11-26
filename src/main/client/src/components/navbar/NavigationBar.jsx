@@ -6,7 +6,7 @@ import './NavigationBar.scss';
 export default class NavigationBar extends Component {
   render() {
     return (
-      <Navbar expand="lg" className="navbar-fixed-top">
+      <Navbar expand="lg" sticky="top">
         <Navbar.Brand href="/">
           <img className="logo" src={Logo} alt="" />
         </Navbar.Brand>
